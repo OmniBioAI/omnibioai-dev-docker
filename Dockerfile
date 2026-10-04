@@ -5,13 +5,13 @@
 # Includes: PyTorch GPU · R/Bioconductor · JupyterLab ·
 #           GATK · Samtools · FastQC · Nextflow · Ollama
 # Maintainer: Manish Kumar
-# GitHub: https://github.com/man4ish/omnibioai-dev-docker
-# Pull:  docker pull ghcr.io/man4ish/omnibioai-dev-env:latest
+# GitHub: https://github.com/OmniBioAI/omnibioai-dev-docker
+# Pull:  docker pull ghcr.io/omnibioai/omnibioai-dev-env:latest
 # ==========================================================
 
 FROM nvcr.io/nvidia/pytorch:25.10-py3
 
-LABEL org.opencontainers.image.source=https://github.com/man4ish/omnibioai-dev-docker
+LABEL org.opencontainers.image.source=https://github.com/OmniBioAI/omnibioai-dev-docker
 LABEL org.opencontainers.image.title="OmniBioAI Dev Environment"
 LABEL org.opencontainers.image.description="Full AI/bioinformatics dev environment for DGX/GPU machines. PyTorch GPU, R/Bioconductor, GATK, Nextflow, JupyterLab, Ollama."
 LABEL org.opencontainers.image.version="1.0.0"

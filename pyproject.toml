@@ -40,10 +40,10 @@ classifiers = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/man4ish/omnibioai"
-Repository = "https://github.com/man4ish/omnibioai-dev-docker"
-"Docker Image" = "https://ghcr.io/man4ish/omnibioai-dev-env"
-"Bug Tracker" = "https://github.com/man4ish/omnibioai/issues"
+Homepage = "https://github.com/OmniBioAI/omnibioai"
+Repository = "https://github.com/OmniBioAI/omnibioai-dev-docker"
+"Docker Image" = "https://ghcr.io/omnibioai/omnibioai-dev-env"
+"Bug Tracker" = "https://github.com/OmniBioAI/omnibioai/issues"
 
 [project.optional-dependencies]
 dev = [

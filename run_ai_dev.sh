@@ -2,7 +2,7 @@
 # ==========================================================
 # Script Name: run_ai_dev.sh
 # Description: Launch OmniBioAI Dev Environment
-# Image:       ghcr.io/man4ish/omnibioai-dev-env
+# Image:       ghcr.io/omnibioai/omnibioai-dev-env
 # Requires:    NVIDIA GPU + nvidia-container-toolkit
 # Usage:       bash run_ai_dev.sh [OPTIONS]
 #   --jupyter    Start JupyterLab automatically
@@ -11,7 +11,7 @@
 #   --help       Show this help message
 # ==========================================================
 
-IMAGE_NAME="ghcr.io/man4ish/omnibioai-dev-env"
+IMAGE_NAME="ghcr.io/omnibioai/omnibioai-dev-env"
 TAG="latest"
 CONTAINER_NAME="omnibio_dev_foundry"
 JUPYTER_PORT="${JUPYTER_PORT:-8888}"

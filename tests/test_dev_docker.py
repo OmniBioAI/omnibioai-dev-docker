@@ -35,7 +35,7 @@ RUN_SCRIPT = REPO_ROOT / "run_ai_dev.sh"
 EXPECTED_BASE_IMAGE = "nvcr.io/nvidia/pytorch"
 EXPECTED_PORTS = {8888, 11434}          # MySQL removed from image
 EXPECTED_WORKDIR = "/workspace"
-EXPECTED_IMAGE_NAME = "ghcr.io/man4ish/omnibioai-dev-env"
+EXPECTED_IMAGE_NAME = "ghcr.io/omnibioai/omnibioai-dev-env"
 
 # System packages that must be installed
 REQUIRED_APT_PACKAGES = {
@@ -240,10 +240,10 @@ class TestDockerfileLabels(unittest.TestCase):
                          f"version '{match.group(1)}' does not follow semver")
 
     def test_source_label_points_to_github(self) -> None:
-        """The Dockerfile text references github.com/man4ish; the check covers the whole
+        """The Dockerfile text references the authoritative OmniBioAI GitHub location; the check covers the whole
         file, not only the source label."""
         content = dockerfile_content()
-        self.assertIn("github.com/man4ish", content, "source label should point to GitHub")
+        self.assertIn("github.com/OmniBioAI", content, "source label should point to GitHub")
 
     def test_license_label_is_apache(self) -> None:
         """The Dockerfile text contains Apache-2.0."""
@@ -650,7 +650,7 @@ class TestRunScript(unittest.TestCase):
         )
 
     def test_image_name_is_ghcr(self) -> None:
-        """The script text references the ghcr.io/man4ish/omnibioai-dev-env image name."""
+        """The script text references the authoritative GHCR image name."""
         content = run_script_content()
         self.assertIn(EXPECTED_IMAGE_NAME, content,
                       f"IMAGE_NAME should be {EXPECTED_IMAGE_NAME}")

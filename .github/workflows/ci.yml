@@ -22,7 +22,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v5
         with:
-          images: ghcr.io/man4ish/omnibioai-dev-docker
+          images: ghcr.io/omnibioai/omnibioai-dev-env
           tags: |
             type=semver,pattern={{version}}
             type=semver,pattern={{major}}.{{minor}}
