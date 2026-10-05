@@ -1,3 +1,7 @@
+# OmniBioAI — AI/Bioinformatics Development Environment
+# Purpose: Build the GPU AI/bioinformatics development environment.
+# Author: Manish Kumar <manish@omnibioai.org>
+
 # ==========================================================
 # Image Name: omnibioai-dev-env
 # Description: Full AI/Bioinformatics Development Environment
@@ -163,4 +167,5 @@ RUN python -c "import torch; print(f'PyTorch {torch.__version__}')" \
 EXPOSE 8888
 EXPOSE 11434
 
+# Entrypoint and default command
 CMD ["bash"]
